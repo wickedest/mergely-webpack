@@ -1,0 +1,38 @@
+{
+  "name": "mergely-webpack",
+  "version": "0.0.1",
+  "description": "Example Mergely project using webpack",
+  "main": "lib/index.js",
+  "keywords": [
+    "mergely",
+    "merge",
+    "diff",
+    "myers"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && webpack",
+    "start": "webpack-dev-server -w --progress --colors --config ./webpack.config.js --content-base editor/ --inline --hot --host 0.0.0.0"
+  },
+  "author": {
+    "name": "Jamie Peabody",
+    "email": "jamie.peabody@gmail.com",
+    "url": "http://mergely.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "codemirror": "^5.32.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^3.4.2",
+    "jquery": "^3.2.1",
+    "mergely": "^4.0.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
