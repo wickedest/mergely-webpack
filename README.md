@@ -2,6 +2,16 @@
 
 This project can be used to start a new project using Mergely using [webpack](https://webpack.js.org/).  Clone this repository and then delete the `.git` folder.
 
+## Dependencies
+Mergely uses pngquant, which may need to be built from source depending on which platform you are using. This requires [nasm](https://www.nasm.us/) and [libpng](http://www.libpng.org/pub/png/libpng.html).
+
+First, try following installation instructions without doing anything. If you see `configure: error: no nasm (Netwide Assembler) found` and/or `make sure that libpng-dev is installed`, install nasm and libpng. On RHEL and RHEL-like Linuxes, the following may do the trick: 
+
+```
+sudo yum install nasm
+sudo yum install libpng-devel
+```
+
 ## Installation
 
 ```
