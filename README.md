@@ -7,7 +7,7 @@ This project can be used to start a new project using Mergely using [webpack](ht
 ```
 git clone --depth=1 git@github.com:wickedest/mergely-webpack.git
 cd mergely-webpack
-rm -rf ./git
+rm -rf .git
 npm install
 ```
 
