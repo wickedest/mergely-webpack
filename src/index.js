@@ -1,12 +1,13 @@
-require('jquery');
-require('codemirror/lib/codemirror.js');
-require('codemirror/addon/search/searchcursor.js');
-require('codemirror/lib/codemirror.css');
 require('mergely/lib/mergely.js');
 require('mergely/lib/mergely.css');
 
-$(document).ready(function() {
-	$('#mergely').mergely({
-		license: 'lgpl'
-	});
+
+const doc = new Mergely('#mergely', {
+    lhs: (setValue) => setValue('apples'),
+    rhs: (setValue) => setValue('bananas')
+});
+
+// On init, scroll to first diff
+doc.once('updated', () => {
+    doc.scrollToDiff('next');
 });

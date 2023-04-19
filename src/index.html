@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mergely Example</title>
-  <meta name="description" content="Example webpack project for Mergely." />
+	<title>Mergely Example</title>
+	<meta name="description" content="Example webpack project for Mergely." />
+	<!-- CodeMirror peer dependency -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/addon/search/searchcursor.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css" />
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#mergely {
+			height: inherit;
+		}
+	</style>
 </head>
 <body>
-  <div class="mergely-full-screen-8">
-    <div class="mergely-resizer">
-      <div id="mergely"></div>
-    </div>
-  </div>
+	<div id="mergely"></div>
 </body>
 </html>

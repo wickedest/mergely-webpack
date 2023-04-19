@@ -1,6 +1,6 @@
 {
   "name": "mergely-webpack",
-  "version": "0.0.2",
+  "version": "5.0.0",
   "description": "Example Mergely project using webpack",
   "main": "lib/index.js",
   "keywords": [
@@ -10,8 +10,8 @@
     "myers"
   ],
   "scripts": {
-    "build": "rm -rf lib && webpack",
-    "start": "webpack-dev-server -w --progress --colors --config ./webpack.config.js --content-base editor/ --inline --hot --host 0.0.0.0"
+    "build": "rm -rf lib && webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js"
   },
   "author": {
     "name": "Jamie Peabody",
@@ -19,19 +19,21 @@
     "url": "http://mergely.com"
   },
   "license": "ISC",
+  "node": {
+    "engines": "^16"
+  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "codemirror": "^5.32.0",
-    "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.5",
-    "html-loader": "^0.5.1",
-    "html-webpack-plugin": "^2.30.1",
-    "jquery": "^3.2.1",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "codemirror": "^5.65.12",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "mergely": "^4.0.0",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.5"
+    "style-loader": "^3.3.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
   }
 }
