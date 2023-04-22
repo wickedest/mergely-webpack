@@ -1,8 +1,9 @@
 {
   "name": "mergely-webpack",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "Example Mergely project using webpack",
   "main": "lib/index.js",
+  "private": true,
   "keywords": [
     "mergely",
     "merge",
@@ -30,7 +31,7 @@
     "file-loader": "^6.2.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "mergely": "^4.0.0",
+    "mergely": "5.0.0-alpha.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1",
